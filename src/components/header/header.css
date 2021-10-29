@@ -1,0 +1,35 @@
+.my-navbar {
+  background-color: #fff !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.links {
+  /* color: #000 !important; */
+  font-weight: 600;
+}
+
+.header-button {
+  margin-right: 10px;
+  color: #fff !important;
+  min-width: 100px;
+}
+
+.header-logo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.header-logo img {
+  width: "40px" !important;
+  height: "40px";
+}
+
+.header-logo h2 {
+  font-weight: 700;
+  padding-left: 8px;
+}
+
+.header-logo span {
+  color: #ff7f47;
+}
