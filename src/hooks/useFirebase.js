@@ -18,7 +18,7 @@ const auth = getAuth();
 const useFirebase = () => {
   const [user, setUser] = useState();
   const [error, setError] = useState("");
-
+  const [loading, setLoading] = useState("true");
   // google sign in function
   const googleSignIn = () => {
     const googleProvider = new GoogleAuthProvider();
@@ -57,6 +57,7 @@ const useFirebase = () => {
   };
 
   useEffect(() => {
+    setLoading(true);
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
@@ -64,6 +65,7 @@ const useFirebase = () => {
       } else {
         // Swal.fire("Please sign in first");
       }
+      setLoading(false);
     });
   }, []);
   return {
@@ -73,6 +75,7 @@ const useFirebase = () => {
     googleSignIn,
     user,
     verifyEmail,
+    loading,
   };
 };
 

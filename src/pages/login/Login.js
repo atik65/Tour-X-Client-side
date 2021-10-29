@@ -5,14 +5,16 @@ import "./login.css";
 import logo from "../../utilities/logo.png";
 import googleLogo from "../../utilities/search.png";
 import useAuth from "../../hooks/useAuth";
-import { useHistory } from "react-router";
+import { useHistory, useLocation } from "react-router";
+import { NavLink } from "react-router-dom";
 
 const Login = () => {
   const history = useHistory();
-  const { googleSignIn, createUser, signIn } = useAuth();
+  const location = useLocation();
+  const { googleSignIn, createUser, signIn, loading } = useAuth();
   const [regesterd, setRegestered] = useState(false);
 
-  const redirect_uri = "/";
+  const redirect_uri = location.state.from || "/";
 
   const {
     reset,
@@ -98,11 +100,13 @@ const Login = () => {
 
   return (
     <div className="login">
-      <div className="login-logo">
-        <img src={logo} alt="" />{" "}
-        <h2>
-          Tour<span>X</span>
-        </h2>
+      <div>
+        <NavLink className="login-logo" to="/">
+          <img src={logo} alt="" />{" "}
+          <h2>
+            Tour<span>X</span>
+          </h2>
+        </NavLink>
       </div>
 
       <div className="login-form-parent">

@@ -1,0 +1,21 @@
+.allTours {
+  padding: 20px 0;
+  margin-bottom: 90px;
+}
+
+.allTours h1 {
+  margin-bottom: 30px;
+}
+.allToursContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .allToursContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+}

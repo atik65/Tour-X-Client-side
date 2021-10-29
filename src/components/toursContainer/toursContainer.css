@@ -1,0 +1,28 @@
+.tours-container-header {
+  text-align: center;
+}
+
+.tours-container-header h4 {
+  color: #ff7f47;
+  font-weight: 600;
+  margin-top: 5%;
+}
+
+.tours-container-header h1 {
+  font-weight: 600;
+  margin-top: 2%;
+}
+
+.tours-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .tours-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

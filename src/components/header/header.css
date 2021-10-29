@@ -33,3 +33,10 @@
 .header-logo span {
   color: #ff7f47;
 }
+
+@media only screen and (max-width: 600px) {
+  .header-logo h2 {
+    padding-left: 3px;
+    font-size: 30px;
+  }
+}

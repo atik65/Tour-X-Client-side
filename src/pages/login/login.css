@@ -4,13 +4,20 @@
 }
 
 .login-logo {
-  display: flex;
+  margin: 0 auto;
+  width: 20%;
   justify-content: center;
   padding: 30px 0;
+  color: black;
+  text-decoration: none;
+}
+
+.login-logo:hover {
+  color: black;
 }
 
 .login-logo img {
-  width: 5%;
+  width: 20%;
 }
 
 .login-logo h2 {
@@ -86,7 +93,7 @@
   }
 
   .login-logo img {
-    width: 13%;
+    width: 60%;
   }
 
   .login-logo h2 {
