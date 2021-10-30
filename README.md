@@ -12,6 +12,7 @@
 #### Things using to develop this site-
 - Client Side with React
 - Server side with Express
+- Mongodb Atlas for Database
 - Authentication with Firebase
 - Routing with React Router Dom
 - Form handling with react hook form
