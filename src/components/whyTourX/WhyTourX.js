@@ -15,7 +15,7 @@ const WhyTourX = () => {
         <div className="card-container-whyTourX">
           <div data-aos="zoom-in-up" className="card-item-whyTourX">
             <p>
-              <i class="fas fa-user-tie"></i>
+              <i className="fas fa-user-tie"></i>
             </p>
             <h4>
               2000+ Our <br />
@@ -24,7 +24,7 @@ const WhyTourX = () => {
           </div>
           <div data-aos="zoom-in-up" className="card-item-whyTourX">
             <p>
-              <i class="far fa-handshake"></i>
+              <i className="far fa-handshake"></i>
             </p>
             <h4>
               100% trusted travel <br />
@@ -33,7 +33,7 @@ const WhyTourX = () => {
           </div>
           <div data-aos="zoom-in-up" className="card-item-whyTourX">
             <p>
-              <i class="fas fa-user-graduate"></i>
+              <i className="fas fa-user-graduate"></i>
             </p>
             <h4>
               10+ year of travel <br />
@@ -42,7 +42,7 @@ const WhyTourX = () => {
           </div>
           <div data-aos="zoom-in-up" className="card-item-whyTourX">
             <p>
-              <i class="far fa-smile-wink"></i>
+              <i className="far fa-smile-wink"></i>
             </p>
             <h4>
               90% of our traveller <br /> happy

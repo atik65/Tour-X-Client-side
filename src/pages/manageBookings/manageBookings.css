@@ -1,0 +1,38 @@
+.mangeBookings {
+  background-color: rgba(248, 248, 248, 0.459);
+  border-radius: 10px;
+  padding-top: 80px;
+}
+
+.mangeBookings-left {
+  min-height: 60vh;
+
+  text-align: center;
+}
+
+.mangeBookings-right {
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+
+.mangeBookings-left button {
+  margin-bottom: 20px;
+  width: 80%;
+  height: 40px;
+  background-color: #ff7f47;
+  border: none;
+
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .mangeBookings-left {
+    min-height: 10vh;
+  }
+
+  .mangeBookings {
+    padding-top: 10px;
+  }
+}

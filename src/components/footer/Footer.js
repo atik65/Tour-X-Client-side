@@ -21,15 +21,15 @@ const Footer = () => {
             <h3>Follow Us:</h3>
             <p>
               <span>
-                <i class="fab fa-facebook-f"></i>
+                <i className="fab fa-facebook-f"></i>
               </span>
               <span>
                 {" "}
-                <i class="fab fa-instagram    "></i>{" "}
+                <i className="fab fa-instagram    "></i>{" "}
               </span>
               <span>
                 {" "}
-                <i class="fab fa-twitter    "></i>{" "}
+                <i className="fab fa-twitter    "></i>{" "}
               </span>
             </p>
           </div>
@@ -38,21 +38,21 @@ const Footer = () => {
 
             <p className="py-2">
               <span>
-                <i class="fas fa-phone-volume"></i>
+                <i className="fas fa-phone-volume"></i>
               </span>
               010020000
             </p>
 
             <p className="py-2">
               <span>
-                <i class="far fa-envelope"></i>
+                <i className="far fa-envelope"></i>
               </span>
               email@email.com
             </p>
 
             <p className="py-2">
               <span>
-                <i class="fas fa-location-arrow"></i>
+                <i className="fas fa-location-arrow"></i>
               </span>
               Willison Street <br /> Eagan, United State
             </p>

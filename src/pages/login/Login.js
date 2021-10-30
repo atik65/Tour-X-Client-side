@@ -14,7 +14,7 @@ const Login = () => {
   const { googleSignIn, createUser, signIn, loading } = useAuth();
   const [regesterd, setRegestered] = useState(false);
 
-  const redirect_uri = location.state.from || "/";
+  const redirect_uri = location?.state?.from || "/";
 
   const {
     reset,

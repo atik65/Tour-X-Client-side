@@ -52,7 +52,12 @@ const PlaceOrder = () => {
         if (res.status === 200) {
           reset();
           history.push("/");
-          Swal.fire("congratulations!", "Tour booked Successfully!", "success");
+          Swal.fire({
+            icon: "success",
+            title: "Tour booked Successfully!",
+            showConfirmButton: false,
+            timer: 1500,
+          });
         }
       })
       .catch((error) => {
@@ -104,14 +109,18 @@ const PlaceOrder = () => {
               <input
                 type="tel"
                 placeholder="Enter Your Mobile Number"
-                {...register("mobile", { maxLength: 12 })}
+                {...register("mobile", {})}
               />
               <input
                 type="text"
                 placeholder="place"
                 {...register("place", { required: true })}
               />
-              <input type="date" placeholder="date" {...register("date", {})} />
+              <input
+                type="date"
+                placeholder="date"
+                {...register("date", { required: true })}
+              />
 
               <input type="submit" value="Book Tour" />
             </form>

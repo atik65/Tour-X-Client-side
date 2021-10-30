@@ -7,6 +7,8 @@ import Login from "./pages/login/Login";
 import PlaceOrder from "./pages/placeOrder/PlaceOrder";
 import PrivateRoute from "./components/privateRoute/PrivateRoute";
 import AllTours from "./pages/allTours/AllTours";
+import MyBookings from "./pages/myBookings/MyBookings";
+import ManageBookings from "./pages/manageBookings/ManageBookings";
 
 function App() {
   return (
@@ -18,6 +20,12 @@ function App() {
             <Route path="/login" component={Login} />
             <PrivateRoute path="/placeorder/:id">
               <PlaceOrder />
+            </PrivateRoute>
+            <PrivateRoute path="/mybookings">
+              <MyBookings />
+            </PrivateRoute>
+            <PrivateRoute path="/managebookings">
+              <ManageBookings />
             </PrivateRoute>
             <Route path="/alltours" component={AllTours} />
           </Switch>
