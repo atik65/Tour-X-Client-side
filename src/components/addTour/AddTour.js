@@ -3,6 +3,7 @@ import "./addTour.css";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 const AddTour = () => {
   const {
@@ -35,6 +36,9 @@ const AddTour = () => {
 
   return (
     <div className="addTour">
+      <Helmet>
+        <title> Add New Tour </title>
+      </Helmet>
       <h1 className="text-center mb-5">Add a new Tour Package</h1>
 
       <div className="addTourForm">
@@ -45,7 +49,7 @@ const AddTour = () => {
             {...register("img", { required: true })}
           />
           <input
-            type="text"
+            type="number"
             placeholder="Cost of the Package"
             {...register("cost", { required: true })}
           />

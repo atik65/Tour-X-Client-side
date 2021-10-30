@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import Slider from "../../components/slider/Slider";
@@ -9,6 +10,9 @@ import "./homePage.css";
 const HomePage = () => {
   return (
     <div>
+      <Helmet>
+        <title> TourX </title>
+      </Helmet>
       <Header />
       <Slider />
       <ToursContainer />

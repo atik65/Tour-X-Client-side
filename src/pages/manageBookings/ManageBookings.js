@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-
+import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";
 import AddTour from "../../components/addTour/AddTour";
 import Header from "../../components/header/Header";
@@ -95,6 +95,9 @@ const ManageBookings = () => {
 
   return (
     <div>
+      <Helmet>
+        <title> Manage Bookings </title>
+      </Helmet>
       <Header />
 
       <div className="mangeBookings container">

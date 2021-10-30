@@ -5,6 +5,7 @@ import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import useAuth from "../../hooks/useAuth";
 import "./myBookings.css";
+import { Helmet } from "react-helmet";
 
 const MyBookings = () => {
   const [bookings, setBookings] = useState([]);
@@ -68,6 +69,9 @@ const MyBookings = () => {
   };
   return (
     <div>
+      <Helmet>
+        <title> My Bookings </title>
+      </Helmet>
       <Header />
       {loading ? (
         <div className="text-center my-5">

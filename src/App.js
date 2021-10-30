@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import HomePage from "./pages/homePage/HomePage";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -23,20 +22,13 @@ function App() {
               <PlaceOrder />
             </PrivateRoute>
 
-            {/* <Route path="/placeorder/:id">
-              <PlaceOrder />
-            </Route> */}
-
             <PrivateRoute path="/mybookings">
               <MyBookings />
             </PrivateRoute>
-            {/* <Route path="/mybookings">
-              <MyBookings />
-            </Route> */}
+
             <PrivateRoute path="/managebookings">
               <ManageBookings />
             </PrivateRoute>
-            {/* <Route path="/managebookings" component={ManageBookings} /> */}
 
             <Route path="/alltours" component={AllTours} />
 

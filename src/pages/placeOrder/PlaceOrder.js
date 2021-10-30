@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router";
-
+import { Helmet } from "react-helmet";
 import Header from "../../components/header/Header";
 import TourCard from "../../components/tourCard/TourCard";
 import useAuth from "../../hooks/useAuth";
@@ -69,6 +69,9 @@ const PlaceOrder = () => {
   if (loading) {
     return (
       <div className="text-center my-5">
+        <Helmet>
+          <title>TourX-Book Tour </title>
+        </Helmet>
         <div
           className="spinner-grow text-success"
           style={{ width: "80px", height: "80px" }}

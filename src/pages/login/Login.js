@@ -7,6 +7,7 @@ import googleLogo from "../../utilities/search.png";
 import useAuth from "../../hooks/useAuth";
 import { useHistory, useLocation } from "react-router";
 import { NavLink } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Login = () => {
   const history = useHistory();
@@ -100,6 +101,9 @@ const Login = () => {
 
   return (
     <div className="login">
+      <Helmet>
+        <title> Login </title>
+      </Helmet>
       <div>
         <NavLink className="login-logo" to="/">
           <img src={logo} alt="" />{" "}

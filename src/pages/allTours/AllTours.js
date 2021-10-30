@@ -4,6 +4,7 @@ import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import TourCard from "../../components/tourCard/TourCard";
 import "./allTours.css";
+import { Helmet } from "react-helmet";
 
 const AllTours = () => {
   const [tours, setTours] = useState([]);
@@ -25,6 +26,9 @@ const AllTours = () => {
 
   return (
     <div>
+      <Helmet>
+        <title> All Tours </title>
+      </Helmet>
       <Header />
 
       <div className="allTours">
