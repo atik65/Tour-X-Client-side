@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from "react/cjs/react.development";
 import Swal from "sweetalert2";
+import AddTour from "../../components/addTour/AddTour";
 import Header from "../../components/header/Header";
 import useAuth from "../../hooks/useAuth";
 import "./manageBookings.css";
@@ -189,7 +190,7 @@ const ManageBookings = () => {
               </div>
             ) : (
               <div>
-                <h1>this is add Tour</h1>
+                <AddTour />
               </div>
             )}
           </div>

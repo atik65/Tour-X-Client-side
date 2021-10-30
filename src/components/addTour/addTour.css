@@ -1,0 +1,30 @@
+.addTour {
+  text-align: center;
+}
+
+.addTour input,
+select {
+  width: 80%;
+  border: none;
+  outline: none;
+  border-bottom: 1px dotted rgba(56, 56, 56, 0.452);
+  margin-bottom: 15px;
+  height: 30px;
+  padding-left: 5px;
+}
+
+.addTour input[type="submit"] {
+  margin-top: 10px;
+  background-color: #ff7f47;
+  height: 40px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+
+@media only screen and (width: 600px) {
+  .addTour input,
+  select {
+    width: 95%;
+  }
+}

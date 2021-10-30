@@ -40,7 +40,13 @@ const useFirebase = () => {
     signOut(auth)
       .then((result) => {
         setUser({});
-        Swal.fire("Good job!", "You sign out successfully!", "success");
+
+        Swal.fire({
+          icon: "success",
+          title: "You sign out successfully!",
+          showConfirmButton: false,
+          timer: 1500,
+        });
       })
       .catch((error) => {
         Swal.fire("Opps! Something went Wrong", "Sign Out failed!", "error");
