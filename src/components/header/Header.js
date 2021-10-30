@@ -47,16 +47,20 @@ const Header = () => {
                 All Tours
               </NavLink>
 
-              <NavLink to="/mybookings" className="nav-link links mx-3">
-                My Bookings
-              </NavLink>
+              {user?.email && (
+                <NavLink to="/mybookings" className="nav-link links mx-3">
+                  My Bookings
+                </NavLink>
+              )}
 
-              <NavLink
-                to="/managebookings"
-                className="nav-link btn btn-sm header-button btn-secondary mx-3 mt-2 mb-2 mb-lg-0 mt-lg-0"
-              >
-                Manage all Bookings
-              </NavLink>
+              {user?.email && (
+                <NavLink
+                  to="/managebookings"
+                  className="nav-link btn btn-sm header-button btn-secondary mx-3 mt-2 mb-2 mb-lg-0 mt-lg-0"
+                >
+                  Manage all Bookings
+                </NavLink>
+              )}
 
               {user?.email ? (
                 <a
