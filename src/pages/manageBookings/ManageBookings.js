@@ -1,6 +1,6 @@
 import axios from "axios";
-import React, { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
+import React, { useEffect, useState } from "react";
+
 import Swal from "sweetalert2";
 import AddTour from "../../components/addTour/AddTour";
 import Header from "../../components/header/Header";
@@ -170,7 +170,7 @@ const ManageBookings = () => {
                                     onClick={() => handleApprove(_id)}
                                     className="text-success"
                                   >
-                                    <i class="far fa-check-circle"></i>
+                                    <i className="far fa-check-circle"></i>
                                   </button>
                                 </div>
                                 <div className="col-md-1">

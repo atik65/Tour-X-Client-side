@@ -1,6 +1,5 @@
 import axios from "axios";
-import React, { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
+import React, { useEffect, useState } from "react";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import TourCard from "../../components/tourCard/TourCard";
@@ -47,7 +46,7 @@ const AllTours = () => {
         ) : (
           <div className="allToursContainer container ">
             {tours.map((tour) => (
-              <TourCard tour={tour} />
+              <TourCard key={tour._id} tour={tour} />
             ))}
           </div>
         )}

@@ -1,7 +1,7 @@
 import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router";
-import { useState } from "react/cjs/react.development";
+
 import Header from "../../components/header/Header";
 import TourCard from "../../components/tourCard/TourCard";
 import useAuth from "../../hooks/useAuth";
